@@ -1,0 +1,13 @@
+platform :ios, 5.0
+
+target :ServiceTest do
+  pod 'ReactiveCocoa', '~> 1.9.7'
+  pod 'MagicalRecord', '~> 2.1'
+  pod 'Typhoon', '~> 1.2.7'
+end
+
+target :ServiceTestTests	 do
+  pod 'Expecta',    '~> 0.2.2'
+  pod 'Specta',		'~> 0.1.11'
+  pod 'OCMock',		'~> 2.2.1'
+end
