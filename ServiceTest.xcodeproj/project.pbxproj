@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		527F3F2E17DB9597003D1103 /* CategoriesViewModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 527F3F2D17DB9597003D1103 /* CategoriesViewModelSpec.m */; };
 		529701FE17D394470081B65F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529701FD17D394470081B65F /* UIKit.framework */; };
 		5297020017D394470081B65F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529701FF17D394470081B65F /* Foundation.framework */; };
 		5297020217D394470081B65F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5297020117D394470081B65F /* CoreGraphics.framework */; };
@@ -56,6 +57,7 @@
 
 /* Begin PBXFileReference section */
 		1868F1292ECF4FD5B6E95910 /* Pods-ServiceTest.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTest.xcconfig"; path = "Pods/Pods-ServiceTest.xcconfig"; sourceTree = SOURCE_ROOT; };
+		527F3F2D17DB9597003D1103 /* CategoriesViewModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoriesViewModelSpec.m; sourceTree = "<group>"; };
 		529701FA17D394470081B65F /* ServiceTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ServiceTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		529701FD17D394470081B65F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		529701FF17D394470081B65F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -313,6 +315,7 @@
 				5297029117D3A18F0081B65F /* ProductsViewModelSpec.m */,
 				5297029917D3AB0E0081B65F /* ProductsServiceSpec.m */,
 				5297029F17D3C6C40081B65F /* CategoryServiceSpec.m */,
+				527F3F2D17DB9597003D1103 /* CategoriesViewModelSpec.m */,
 			);
 			path = Specs;
 			sourceTree = "<group>";
@@ -535,6 +538,7 @@
 				5297028E17D3A0190081B65F /* ArrangeProducts.m in Sources */,
 				5297029217D3A18F0081B65F /* ProductsViewModelSpec.m in Sources */,
 				5297029A17D3AB0E0081B65F /* ProductsServiceSpec.m in Sources */,
+				527F3F2E17DB9597003D1103 /* CategoriesViewModelSpec.m in Sources */,
 				529702A017D3C6C40081B65F /* CategoryServiceSpec.m in Sources */,
 				529702A317D3C7CE0081B65F /* ArrangeCategories.m in Sources */,
 			);

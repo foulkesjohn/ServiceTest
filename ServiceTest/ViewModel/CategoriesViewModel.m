@@ -22,6 +22,7 @@
     if (self)
     {
         self.categoryService = categoryService;
+        self.categories = [self.categoryService sortedCategories];
     }
     return self;
 }
