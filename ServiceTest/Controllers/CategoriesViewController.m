@@ -8,10 +8,9 @@
 
 #import "CategoriesViewController.h"
 #import "ProductsViewController.h"
+#import "CategoryCell.h"
 
 @interface CategoriesViewController ()
-
-@property (nonatomic, strong) CategoriesViewModel *viewModel;
 
 @end
 
@@ -33,7 +32,7 @@ NSString *const CategoryCellIdentifier = @"CategoryCell";
 {
     [super viewDidLoad];
 	
-    [self.categoryCollectionView registerClass: [UICollectionViewCell class] forCellWithReuseIdentifier: CategoryCellIdentifier];
+    //[self.categoryCollectionView registerClass: [CategoryCell class] forCellWithReuseIdentifier: CategoryCellIdentifier];
 }
 
 - (void) showProducts
@@ -60,15 +59,18 @@ NSString *const CategoryCellIdentifier = @"CategoryCell";
 
 - (UICollectionViewCell *) collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: CategoryCellIdentifier forIndexPath: indexPath];
+    CategoryCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier: CategoryCellIdentifier forIndexPath: indexPath];
     cell.backgroundColor = [UIColor whiteColor];
     
+    NSArray *categories = self.viewModel.categories;
+    id<Category> category = categories[indexPath.section];
+    NSArray *products = [category.products allObjects];
+    id<Product> product = products[indexPath.row];
+    
+    cell.titleLabel.text = [category name];
+    cell.productLabel.text = [product name];
+    
     return cell;
-}
-
-- (CGSize) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPathcollectionView
-{
-    return CGSizeMake(100, 100);
 }
 
 - (UIEdgeInsets) collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout insetForSectionAtIndex:(NSInteger)section

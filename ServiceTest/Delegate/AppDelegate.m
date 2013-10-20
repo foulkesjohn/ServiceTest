@@ -14,14 +14,17 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    //self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     
     TyphoonComponentFactory *factory = [TyphoonBlockComponentFactory factoryWithAssembly: [ServiceTestAssembly assembly]];
     [factory makeDefault];
+
     
-    id controller = [factory componentForType: [CategoriesViewController class]];
+    CategoriesViewController *controller = (CategoriesViewController *)self.window.rootViewController;    
+    controller.viewModel = [factory componentForType: [CategoriesViewModel class]];
+    
     //UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: controller];
-    self.window.rootViewController = controller;
+    //self.window.rootViewController = controller;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

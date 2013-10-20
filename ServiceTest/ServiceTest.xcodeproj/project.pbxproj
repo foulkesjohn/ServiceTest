@@ -17,6 +17,8 @@
 		521A7E4A181460EB008ADCE0 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 521A7E43181460EB008ADCE0 /* Default@2x.png */; };
 		521A7E4B181460EB008ADCE0 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 521A7E45181460EB008ADCE0 /* main.m */; };
 		521A7E4C181460EB008ADCE0 /* ServiceTest-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 521A7E46181460EB008ADCE0 /* ServiceTest-Info.plist */; };
+		521A7E5018146165008ADCE0 /* CategoryCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 521A7E4F18146165008ADCE0 /* CategoryCell.m */; };
+		521A7E5318146391008ADCE0 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 521A7E5218146391008ADCE0 /* MainStoryboard.storyboard */; };
 		526BABCA181452C600480F37 /* Pods-ServiceTest.xcconfig in Resources */ = {isa = PBXBuildFile; fileRef = 526BABC9181452C600480F37 /* Pods-ServiceTest.xcconfig */; };
 		526BABCD1814536700480F37 /* libServiceTest.Core.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 526BABCC1814536700480F37 /* libServiceTest.Core.a */; };
 		529701FE17D394470081B65F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 529701FD17D394470081B65F /* UIKit.framework */; };
@@ -41,6 +43,9 @@
 		521A7E45181460EB008ADCE0 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		521A7E46181460EB008ADCE0 /* ServiceTest-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "ServiceTest-Info.plist"; sourceTree = "<group>"; };
 		521A7E47181460EB008ADCE0 /* ServiceTest-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ServiceTest-Prefix.pch"; sourceTree = "<group>"; };
+		521A7E4E18146165008ADCE0 /* CategoryCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CategoryCell.h; sourceTree = "<group>"; };
+		521A7E4F18146165008ADCE0 /* CategoryCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CategoryCell.m; sourceTree = "<group>"; };
+		521A7E5218146391008ADCE0 /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
 		526BAB7718144C4E00480F37 /* libServiceTest.Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libServiceTest.Core.a; path = "../ServiceTest.Core/build/Debug-iphoneos/libServiceTest.Core.a"; sourceTree = "<group>"; };
 		526BABC9181452C600480F37 /* Pods-ServiceTest.xcconfig */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xcconfig; name = "Pods-ServiceTest.xcconfig"; path = "../Pods/Pods-ServiceTest.xcconfig"; sourceTree = "<group>"; };
 		526BABCC1814536700480F37 /* libServiceTest.Core.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libServiceTest.Core.a; path = "../ServiceTest.Core/build/Debug-iphoneos/libServiceTest.Core.a"; sourceTree = "<group>"; };
@@ -73,7 +78,9 @@
 			children = (
 				521A7E20181460AC008ADCE0 /* Controllers */,
 				521A7E28181460AC008ADCE0 /* Delegate */,
+				521A7E4D18146158008ADCE0 /* Views */,
 				521A7E2D181460AC008ADCE0 /* Infrastructure */,
+				521A7E511814637E008ADCE0 /* Storyboards */,
 				521A7E40181460EB008ADCE0 /* Images */,
 				521A7E44181460EB008ADCE0 /* Supporting */,
 				521A7E2B181460AC008ADCE0 /* InfoPlist.strings */,
@@ -128,6 +135,23 @@
 				521A7E47181460EB008ADCE0 /* ServiceTest-Prefix.pch */,
 			);
 			path = Supporting;
+			sourceTree = "<group>";
+		};
+		521A7E4D18146158008ADCE0 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				521A7E4E18146165008ADCE0 /* CategoryCell.h */,
+				521A7E4F18146165008ADCE0 /* CategoryCell.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		521A7E511814637E008ADCE0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				521A7E5218146391008ADCE0 /* MainStoryboard.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		529701F117D394470081B65F = {
@@ -217,6 +241,7 @@
 				526BABCA181452C600480F37 /* Pods-ServiceTest.xcconfig in Resources */,
 				521A7E3C181460AC008ADCE0 /* InfoPlist.strings in Resources */,
 				521A7E4A181460EB008ADCE0 /* Default@2x.png in Resources */,
+				521A7E5318146391008ADCE0 /* MainStoryboard.storyboard in Resources */,
 				521A7E48181460EB008ADCE0 /* Default-568h@2x.png in Resources */,
 				521A7E4C181460EB008ADCE0 /* ServiceTest-Info.plist in Resources */,
 				521A7E49181460EB008ADCE0 /* Default.png in Resources */,
@@ -248,6 +273,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				521A7E4B181460EB008ADCE0 /* main.m in Sources */,
+				521A7E5018146165008ADCE0 /* CategoryCell.m in Sources */,
 				521A7E37181460AC008ADCE0 /* ProductsViewController.m in Sources */,
 				521A7E3D181460AC008ADCE0 /* ServiceTestAssembly.m in Sources */,
 				521A7E36181460AC008ADCE0 /* CategoriesViewController.m in Sources */,

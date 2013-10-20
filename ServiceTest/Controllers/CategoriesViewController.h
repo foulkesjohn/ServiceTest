@@ -13,5 +13,6 @@
 - (id) initWithViewModel: (CategoriesViewModel *) viewModel;
 
 @property (nonatomic, weak) IBOutlet UICollectionView *categoryCollectionView;
+@property (nonatomic, strong) CategoriesViewModel *viewModel;
 
 @end
