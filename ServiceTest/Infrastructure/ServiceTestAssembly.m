@@ -7,13 +7,8 @@
 //
 
 #import "ServiceTestAssembly.h"
-#import "ProductsViewModel.h"
 #import "ProductsViewController.h"
-#import "CoreDataProductsRepository.h"
 #import "CategoriesViewController.h"
-#import "CategoriesViewModel.h"
-#import "CategoryService.h"
-#import "CoreDataCategoryRepository.h"
 
 @implementation ServiceTestAssembly
 
@@ -83,7 +78,7 @@
 
 - (id) categoryRepository
 {
-    return [TyphoonDefinition withClass: [CoreDataCategoryRepository class]];
+    return [TyphoonDefinition withClass: [SampleDataCategoryRepository class]];
 }
 
 @end

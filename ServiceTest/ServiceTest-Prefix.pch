@@ -12,6 +12,5 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
     #import <CoreData/CoreData.h>
-    #import "Repository.h"
-    #import <Typhoon/Typhoon.h>
+    #import <ServiceTest.Core/ServiceTest.h>
 #endif

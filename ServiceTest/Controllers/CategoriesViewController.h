@@ -7,10 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CategoriesViewModel.h"
 
-@interface CategoriesViewController : UIViewController
+@interface CategoriesViewController : UIViewController <UICollectionViewDataSource, UICollectionViewDelegateFlowLayout>
 
 - (id) initWithViewModel: (CategoriesViewModel *) viewModel;
+
+@property (nonatomic, weak) IBOutlet UICollectionView *categoryCollectionView;
 
 @end

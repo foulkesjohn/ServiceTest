@@ -1,5 +1,5 @@
 //
-//  Category.h
+//  BaseRepository.h
 //  ServiceTest
 //
 //  Created by John Foulkes on 01/09/2013.
@@ -7,7 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Repository.h"
 
-@protocol Category <NSObject>
+@interface BaseRepository : NSObject <Repository>
 
 @end

@@ -12,6 +12,6 @@
 
 - (NSArray *) all;
 - (instancetype) byAttribute: (NSString *) attribute value: (NSString *) value;
-- (BOOL) insert: (NSManagedObject *) entity;
+- (BOOL) insert: (NSObject *) entity;
 
 @end

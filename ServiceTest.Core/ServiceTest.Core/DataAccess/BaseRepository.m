@@ -20,7 +20,7 @@
     return nil;
 }
 
-- (BOOL) insert:(NSManagedObject *)entity
+- (BOOL) insert:(NSObject *)entity
 {
     return FALSE;
 }

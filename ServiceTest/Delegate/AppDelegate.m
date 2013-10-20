@@ -20,8 +20,8 @@
     [factory makeDefault];
     
     id controller = [factory componentForType: [CategoriesViewController class]];
-    UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: controller];
-    self.window.rootViewController = navController;
+    //UINavigationController *navController = [[UINavigationController alloc] initWithRootViewController: controller];
+    self.window.rootViewController = controller;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

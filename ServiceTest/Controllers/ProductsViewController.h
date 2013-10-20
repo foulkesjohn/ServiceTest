@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "ProductsViewModel.h"
+#import <ServiceTest.Core/ProductsViewModel.h>
 
 @interface ProductsViewController : UIViewController
 
